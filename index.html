@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SoundSight — Helping visually impaired users navigate the world through real-time sound-based assistance.">
+  <title>SoundSight — Sound-Based Visual Assistance</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-content">
+      <a href="#" class="nav-logo" aria-label="SoundSight home">
+        <span class="logo-icon" aria-hidden="true">◉</span> SoundSight
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#problem">Why</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">SoundSight</h1>
+      <p class="hero-tagline">Navigating the world through sound</p>
+      <p class="hero-description">
+        SoundSight transforms visual information into real-time audio cues, empowering visually impaired
+        users to perceive their surroundings with confidence and independence.
+      </p>
+      <a href="#demo" class="btn btn-primary">Watch Pitch ↓</a>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+  </header>
+
+  <!-- Embedded Video Section -->
+  <section class="video-section" id="demo" aria-labelledby="demo-heading">
+    <div class="container">
+      <h2 class="section-title" id="demo-heading">Hear the Pitch</h2>
+      <div class="video-wrapper">
+        <div class="video-container">
+          <!-- Replace the src with your actual demo video URL -->
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="SoundSight demo video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution Section -->
+  <section class="problem-section" id="problem" aria-labelledby="problem-heading">
+    <div class="container">
+      <h2 class="section-title" id="problem-heading">The Challenge</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon" aria-hidden="true">⚠</div>
+          <h3>The Problem</h3>
+          <p>
+            Over 2.2 billion people live with vision impairment worldwide. Everyday navigation —
+            crossing streets, finding doors, locating objects — remains dangerous and difficult
+            without constant assistance.
+          </p>
+        </div>
+        <div class="problem-card solution-card">
+          <div class="problem-icon" aria-hidden="true">◉</div>
+          <h3>Our Solution</h3>
+          <p>
+            SoundSight uses real-time computer vision to detect objects, obstacles, and spatial cues —
+            then converts them into intuitive audio signals the user can understand instantly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-section" id="how-it-works" aria-labelledby="how-heading">
+    <div class="container">
+      <h2 class="section-title" id="how-heading">How It Works</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3>Capture</h3>
+          <p>A Raspberry Pi camera continuously captures live video frames of the user's surroundings.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3>Detect</h3>
+          <p>YOLOv8 runs real-time object detection — identifying and labeling every object in the frame with bounding boxes.</p>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step-card">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3>Speak</h3>
+          <p>Newly detected objects are instantly announced through audio — "I see chair, door, person" — so the user knows what's around them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team / Hackathon Section -->
+  <section class="team-section" id="team" aria-labelledby="team-heading">
+    <div class="container">
+      <h2 class="section-title" id="team-heading">Built for the Radhwa IT Fair 2026</h2>
+      <p class="team-intro">
+        SoundSight was created originally for the Science Fair, then adapted for the IT Fair to explore how AI and sound can bridge
+        the accessibility gap for visually impaired people.
+      </p>
+      <div class="team-grid">
+        <!-- Replace with actual team member names -->
+        <div class="team-member">
+          <p class="member-name">Faisal</p>
+          <p class="member-role">Vision and Showcase</p>
+        </div>
+        <div class="team-member">
+          <p class="member-name">Murtaza</p>
+          <p class="member-role">Marketing and Promotion</p>
+        </div>
+        <div class="team-member">
+          <p class="member-name">Eyad</p>
+          <p class="member-role">Innovator & Engineering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 SoundSight — IT Fair Project</p>
+      <p class="footer-note">Made with purpose. Built for the Radhwa IT Fair 2026.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
